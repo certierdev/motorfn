@@ -10,18 +10,12 @@
     <link rel="stylesheet" href="style.css">
     <style>
         /* Extra styles just to make labels look nice */
-        .image-label {
-            font-weight: 700;
-            background: #222;
-            color: #fff;
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
         .about-visual img {
             max-width: 220px;
             border-radius: 12px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
     </style>
 </head>
@@ -85,14 +79,22 @@
     <section class="images" id="images">
         <div class="container">
             <h2 class="section-title">Progress Journey</h2>
+            
+            <!-- Before | After header row with line -->
+            <div style="display: flex; justify-content: center; align-items: center; gap: 40px; font-weight: bold; margin-bottom: 5px; font-size: 1.1rem;">
+                <div style="flex: 1; text-align: center;">Before</div>
+                <div style="flex: 0; text-align: center;">|</div>
+                <div style="flex: 1; text-align: center;">After</div>
+            </div>
+            <div style="height: 2px; background: #555; width: 100px; margin: 0 auto 20px;"></div>
+
+            <!-- Images row -->
             <div class="images-grid" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <div class="image-card" style="flex: 1; min-width: 250px; text-align: center;">
-                    <div class="image-label">Before</div>
                     <img src="https://pbs.twimg.com/media/FiaYckYUcAAs5qt.jpg:large" 
                          alt="Before MotorFN" style="max-width:100%; border-radius:10px;">
                 </div>
                 <div class="image-card" style="flex: 1; min-width: 250px; text-align: center;">
-                    <div class="image-label">After</div>
                     <img src="https://pbs.twimg.com/media/FiaYdL_XoAEg1MT?format=jpg&name=large" 
                          alt="After MotorFN" style="max-width:100%; border-radius:10px;">
                 </div>
@@ -112,7 +114,7 @@
                 <a href="#" class="social-link">Ig</a>
                 <a href="#" class="social-link">Di</a>
             </div>
-            <p class="copyright">© 2023 MotorFN. All rights reserved.</p>
+            <p class="copyright">© 2025 MotorFN. All rights reserved.</p>
         </div>
     </footer>
 
